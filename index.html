@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0c1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Automation Lab">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="description" content="Automation Lab Academy — 1350 учебных тем: начальный, продвинутый и экспертный уровни. Офлайн-обучение девяти направлениям промышленной инженерии с задачами и проверкой знаний.">
+<title>Automation Lab Academy 12.1 — Учись на реальных примерах</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-symbol">A<span>.</span></span><div><strong>AUTOMATION LAB</strong><small>АКАДЕМИЯ · 12.1</small></div></div>
+  <p class="nav-title">УЧЕБНЫЙ ЦЕНТР</p>
+  <nav id="nav-main" aria-label="Основное меню">
+    <a href="#home" class="nav-link" data-nav="home"><span class="nav-ico">⌂</span> Главная</a>
+    <a href="#tracks" class="nav-link" data-nav="tracks"><span class="nav-ico">▤</span> Все направления</a>
+    <a href="#resources" class="nav-link" data-nav="resources"><span class="nav-ico">↗</span> Сайты и тренажёры</a>
+    <a href="#labs" class="nav-link" data-nav="labs"><span class="nav-ico">⌘</span> Практические работы</a>
+    <a href="#review" class="nav-link" data-nav="review"><span class="nav-ico">↺</span> Повторение</a>
+  </nav>
+  <p class="nav-title">НАПРАВЛЕНИЯ</p>
+  <nav id="nav-tracks" aria-label="Направления обучения"></nav>
+  <p class="nav-title">СПРАВОЧНИК</p>
+  <nav aria-label="Справочник и настройки">
+    <a href="#glossary" class="nav-link" data-nav="glossary"><span class="nav-ico">≡</span> Словарь терминов</a>
+    <a href="#formulas" class="nav-link" data-nav="formulas"><span class="nav-ico">ƒ</span> Формулы и примеры</a>
+    <a href="#settings" class="nav-link" data-nav="settings"><span class="nav-ico">⚙</span> Настройки и данные</a>
+  </nav>
+  <div class="sidebar-foot"><span class="online-pip"></span><span>Работает офлайн<br><small>Прогресс хранится в браузере</small></span></div>
+</aside>
+<div id="mobile-overlay" aria-hidden="true"></div>
+<div class="shell">
+  <header class="topbar">
+    <button type="button" id="menu-button" class="icon-button menu-button" aria-label="Открыть меню">☰</button>
+    <div class="crumbs" id="crumbs">Обучение <span> / </span> Главная</div>
+    <div class="top-right"><button id="search-button" type="button" class="small-top-button" title="Поиск по урокам">⌕ <span>Поиск</span></button><button id="theme-button" type="button" class="small-top-button" title="Сменить тему">☼</button><span class="version-chip">v12.1</span></div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer">AUTOMATION LAB ACADEMY · Обучающая платформа. Не заменяет инструкции изготовителей, оценку риска и допуск к электрическим работам.</footer>
+</div>
+</div>
+<nav class="mobile-bottom-nav" aria-label="Быстрая навигация">
+  <a href="#home" data-mobile-route="home"><span aria-hidden="true">⌂</span><small>Главная</small></a>
+  <a href="#tracks" data-mobile-route="tracks"><span aria-hidden="true">▤</span><small>Курсы</small></a>
+  <a href="#labs" data-mobile-route="labs"><span aria-hidden="true">⌘</span><small>Практика</small></a>
+  <a href="#review" data-mobile-route="review"><span aria-hidden="true">↺</span><small>Повторение</small></a>
+  <a href="#settings" data-mobile-route="settings"><span aria-hidden="true">⚙</span><small>Данные</small></a>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="content.js"></script>
+<script src="app.js"></script>
+<script src="mobile.js"></script>
+</body>
+</html>
